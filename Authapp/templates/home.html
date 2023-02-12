@@ -70,10 +70,13 @@
               <a class="nav-link scrollto" href="/login">Signin</a>
             </li>
           {% else %}
+          <li>
+            <a href="">{{user.first_name}} {{user.last_name}}</a>
+          </li>
             <li>
               <a class="nav-link scrollto" href="/">Logout</a>
-              
             </li>
+
           {% endif %}
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
